@@ -6,7 +6,7 @@
 /*   By: cmanuel- <cmanuel-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/01 16:00:40 by cmanuel-          #+#    #+#             */
-/*   Updated: 2024/12/01 17:00:27 by cmanuel-         ###   ########.fr       */
+/*   Updated: 2024/12/05 15:55:12 by cmanuel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,6 @@
 
 void	print_char(char c, int long *count)
 {
-	*count += write(1, &c, 1);
-}
-
-void	print_charup(char c, int long *count)
-{
-	if (c >= 'a' && c <= 'f')
-		c -= 32;
 	*count += write(1, &c, 1);
 }
 
